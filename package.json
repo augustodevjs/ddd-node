@@ -1,0 +1,10 @@
+{
+  "name": "ddd-full-cycle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "augusto <augustosaaude@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
