@@ -1,10 +1,10 @@
 // Value Object
 
 export class Address {
-  private _zip: string;
-  private _city: string;
-  private _street: string;
-  private _number: number;
+  _zip: string;
+  _city: string;
+  _street: string;
+  _number: number;
 
   constructor(street: string, number: number, city: string, zip: string) {
     this._zip = zip;
