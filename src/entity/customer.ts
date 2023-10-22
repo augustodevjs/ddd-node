@@ -3,18 +3,15 @@
 
 import { Address } from "./address";
 
-class Customer {
+export class Customer {
   private _id: string;
   private _name: string;
-  private _address: Address;
-  private _active: boolean;
+  private _address!: Address;
+  private _active: boolean = false;
 
-  constructor(id: string, name: string, address: Address, active: boolean) {
+  constructor(id: string, name: string) {
     this._id = id;
     this._name = name;
-    this._active = active;
-    this._address = address;
-
     this.validate();
   }
 
@@ -31,6 +28,10 @@ class Customer {
   changeName(name: string) {
     this._name = name;
     this.validate();
+  }
+
+  addAddress(address: Address) {
+    this._address = address;
   }
 
   activate() {
