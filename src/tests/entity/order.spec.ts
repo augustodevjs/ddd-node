@@ -1,4 +1,4 @@
-import { Order, OrderItem } from "../entity";
+import { Order, OrderItem } from "../../entity";
 
 describe("Order unit tests", () => {
 
