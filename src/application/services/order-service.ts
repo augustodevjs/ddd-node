@@ -1,4 +1,4 @@
-import { Customer, Order, OrderItem } from "../entity";
+import { Customer, Order, OrderItem } from "../../domain/entity";
 import { v4 as uuid } from 'uuid'
 
 export class OrderService {
