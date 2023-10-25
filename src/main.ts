@@ -3,7 +3,7 @@ import { Address, Customer, Order, OrderItem } from "./domain/entity";
 let customer = new Customer("123", "Augusto");
 const address = new Address("Miguel aragão", 1160, "fortaleza", "60765065");
 
-customer.addAddress(address);
+customer.changeAddress(address);
 customer.activate();
 
 const item1 = new OrderItem("1", "Item1", 20, "p1", 2);

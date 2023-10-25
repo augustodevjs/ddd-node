@@ -1,6 +1,3 @@
-// Entidade anêmica tem um id único, atributos e tem getters e setters.
-// Um entidade por padrão tem que se autovalidar.
-
 import { Address } from "./address";
 
 export class Customer {
@@ -22,6 +19,10 @@ export class Customer {
 
   get name(): string {
     return this._name;
+  }
+
+  get address(): Address {
+    return this._address;
   }
 
   get rewardsPoints(): number {
@@ -47,7 +48,7 @@ export class Customer {
     return this._active
   }
 
-  addAddress(address: Address) {
+  changeAddress(address: Address) {
     this._address = address;
   }
 

@@ -26,7 +26,7 @@ describe("Customer unit tests", () => {
     // Arrange
     const customer = new Customer("123", "John");
     const address = new Address("Street 1", 122, "Fortal", "60765065");
-    customer.addAddress(address);
+    customer.changeAddress(address);
 
     // Act
     customer.activate();
