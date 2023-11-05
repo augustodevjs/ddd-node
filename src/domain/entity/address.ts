@@ -1,5 +1,3 @@
-// Value Object
-
 export class Address {
   _zip: string;
   _city: string;

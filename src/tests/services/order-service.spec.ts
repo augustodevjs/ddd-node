@@ -1,5 +1,5 @@
-import { Customer, Order, OrderItem } from "../../domain/entity"
-import { OrderService } from "../../application/services";
+import { Customer, Order, OrderItem } from "../../domain"
+import { OrderService } from "../../application";
 
 describe("Order Service Unit Test", () => {
   it("Should get total of orders", () => {
@@ -23,6 +23,18 @@ describe("Order Service Unit Test", () => {
     expect(customer.rewardsPoints).toBe(5);
     expect(order.total()).toBe(10);
   });
+
+
+  it("Should throw exception when order doesn't have more thant 2 items", () => {
+    const customer = new Customer("c1", "Customer 1");
+
+    const orderFunction = () => {
+      OrderService.placeOrder(customer, []);
+    };
+
+    expect(orderFunction).toThrowError('Order must have at least one item');
+  });
+
 
   it("Should add reward points ", () => {
     const customer = new Customer("c1", "Customer 1");
