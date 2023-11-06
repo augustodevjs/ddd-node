@@ -1,3 +1,3 @@
-export * from './order-repository'
-export * from './product-repository'
-export * from './customer-repository'
+export * from './order'
+export * from './product'
+export * from './customer'

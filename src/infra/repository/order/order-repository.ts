@@ -1,5 +1,5 @@
-import { IOrder, Order, OrderItem } from "../../domain";
-import { OrderItemModel, OrderModel } from "../db";
+import { IOrder, Order, OrderItem } from "../../../domain";
+import {OrderItemModel, OrderModel} from "./sequelize";
 
 export class OrderRepository implements IOrder {
   async create(entity: Order): Promise<void> {

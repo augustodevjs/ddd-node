@@ -108,6 +108,7 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "include": [
-    "src/**/*.ts", "src/tests/services", "src/domain/contracts/event/IEventDispatcherts",
+    "src/**/*.ts",
+    "src/tests/services", "src/domain/contracts/event/IEventDispatcherts"
   ]
 }

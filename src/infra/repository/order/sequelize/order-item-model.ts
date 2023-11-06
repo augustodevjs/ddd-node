@@ -1,4 +1,3 @@
-import { ProductModel, OrderModel } from '..'
 import {
   Table,
   Model,
@@ -7,6 +6,8 @@ import {
   ForeignKey,
   BelongsTo,
 } from 'sequelize-typescript'
+import {ProductModel} from "../../product";
+import {OrderModel} from "./order-model";
 
 @Table({
   tableName: 'order_items',

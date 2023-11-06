@@ -1,5 +1,5 @@
-import { IProduct, Product } from "../../domain";
-import { ProductModel } from "../db";
+import { IProduct, Product } from "../../../domain";
+import {ProductModel} from "./sequelize";
 
 export class ProductRepository implements IProduct {
   async findAll(): Promise<Product[]> {

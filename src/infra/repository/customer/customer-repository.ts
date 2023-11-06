@@ -1,5 +1,5 @@
-import { Address, Customer, ICustomer } from "../../domain";
-import { CustomerModel } from "../db";
+import { Address, Customer, ICustomer } from "../../../domain";
+import {CustomerModel} from "./sequelize";
 
 export class CustomerRepository implements ICustomer {
   async create(entity: Customer): Promise<void> {
