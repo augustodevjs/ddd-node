@@ -1,6 +1,6 @@
 import {IProductEntity} from "../../contracts";
 
-export class Product implements IProductEntity {
+export class ProductB implements IProductEntity{
   private readonly _id: string;
   private _name: string;
   private _price: number;
@@ -35,7 +35,7 @@ export class Product implements IProductEntity {
   }
 
   get price(): number {
-    return this._price;
+    return this._price * 2;
   }
 
   changeName(name: string): void {
