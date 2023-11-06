@@ -21,8 +21,8 @@ export class Customer {
     return this._name;
   }
 
-  get address(): Address {
-    return this._address;
+  get address(): Address | null {
+    return this._address ?? null;
   }
 
   get rewardsPoints(): number {
