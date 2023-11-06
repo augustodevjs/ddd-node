@@ -72,3 +72,7 @@
 - Um ou mais agregados devem estar juntos somente se fazem sentido.
 - Organizado pelo domínio/subdomínio e não pelo tipo de objetos
 - Devem respeitar a mesma divisão quando estão em camadas diferentes.
+
+### Factories:
+
+- Desloque a responsabilidade de criar instâncias de objetos complexos e AGREGADOS para um objeto separado, que pode não ter responsabilidade no modelo de domínio, mas ainda faz parte do design do domínio. Forneça uma interface que encapsule toda a criação complexa que não exija que o cliente faça referência às classes concretas dos objetos que estão sendo instanciados. Crie Aggregates inteiros de uma única vez, reforçando suas invariantes.
